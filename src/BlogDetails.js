@@ -26,7 +26,7 @@ const BlogDetails = () => {
         <article>
            <button className="back-btn" onClick={handleClickBack}>back</button>
           <h2>{ blog.title }</h2>
-          <img src="{`${blog.image}`}" className="img-detail" />
+          <img src={blog.image} className="img-detail" />
           <p>Written by { blog.author }</p>
           <div>{ blog.body }</div>
           <button onClick={handleClick}>delete</button>
